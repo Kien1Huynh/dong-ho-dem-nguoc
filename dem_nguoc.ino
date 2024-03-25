@@ -13,15 +13,13 @@ unsigned long milli, milli2;
 boolean startCounting = true;
 char buf[5];
 
-int buttonPin[3] = {A3, A2, A1};
+int buttonPin[3] = {A3, A2, A1}; // các nút chức năng sẽ làm sau
 int button[3];
 
 
 void setup()
 {
 
-    Serial.begin(9600);
-    Serial.println("Ready");
     int displayType = COMMON_ANODE;
     int digit1 = 8;
     int digit2 = 12;
